@@ -21,7 +21,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name should never be blank")
+    @NotBlank(message = "Name should neve kjkhjr be blank")
     private String name;
 
     private String email;
