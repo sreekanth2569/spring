@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,10 +22,10 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name s jdsjh  fhgdhfbhould ne nfkje kejk kjeve kjkhjr be blank")
+    @NotBlank(message = "Name sdfr jdsjh  fhgdhfbhould ne nfkje kejk kjeve kjkhjr be blank")
     private String name;
-
+@Valid
     private String email;
-
+@NotBlank(message = "pls add salary")
     private Double salary;
 }
