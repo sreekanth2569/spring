@@ -22,7 +22,7 @@ public class AuthController {
     public AuthResponse login(
             @RequestBody LoginRequest request) {
 
-        log.info("Login request received for user: {}",
+        log.info("Login request received for kn  user: {}",
                 request.getUsername());
 
         authenticationManager.authenticate(
